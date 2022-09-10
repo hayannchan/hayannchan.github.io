@@ -9,6 +9,9 @@
     h2 {
 	    color: #2C2A4A;
     }
+	#ussr {
+		height:200px;
+	}
 </style>
     <title> Homework </title>
 </head>
@@ -20,8 +23,8 @@
     <ol>
         <li> <a href="http://example.com">Site</a> </li>
         <li> <a href="https://example.com">Second example</a> </li>
-	<li> <a href="ftp://<Логин>:<Пароль>@<Адрес>/<Путь>"</a> </li>
-	<li> <p>dont give a fuck</p> </li>
+	<li> <a href="ftp://example.ru/Temp/file.txt">without sign up</a> </li>
+	<li> <a href="ftp://user:pass123@example.ru/Temp/file.txt">with sign in</a> </li>
         <li> <a href="https://www.kubsu.ru/en/node/1299#section-content">Fragment from KubGU</a> </li>
 	<li> <a href="#id123">Fragment v2.0</a> </li>
 	<li> <a href="https://someshop.ru/catalog/iphone?page=1&perpage=20">Two URL things</a> </li>
@@ -29,12 +32,95 @@
 	<li> <a>Link without href attribute</a> </li>
 	<li> <a href="">Link with blank href attribute</a> </li>
 	<li> <a href="https://vk.com/ssilviaf" rel="nofollow">Not allowed to be found by search on google or something</a> </li>
-	<li> <noindex> <a href="https://vk.com/ssilviaf">Not allowed to be indexed</a> </noindex> </li>
-	    
-	    <li> <p>History shows that <a href="https://en.wikipedia.org/wiki/Flower">flowers</a> have been used by humans for thousands of years, to serve a variety of purposes. An early example of this is from about 4,500 years ago in Ancient Egypt, where flowers would be used to decorate women's hair.</p> </li>
-	    <li> <a href="https://en.wikipedia.org/wiki/Flower"><img src="image.jpg" alt="Please work"></a> </li>
-	    
+	<li> <!--noindex--> <a href="https://vk.com/ssilviaf">Not allowed to be indexed</a> <!--/noindex--> </li>	    
+    <li> <p>History shows that <a href="https://en.wikipedia.org/wiki/Flower">flowers</a> have been used by humans for thousands of years, to serve a variety of purposes. An early example of this is from about 4,500 years ago in Ancient Egypt, where flowers would be used to decorate women's hair.</p> </li>
+    <li> <a href="https://en.wikipedia.org/wiki/Flower"><img id="ussr" src="image.jpg" alt="Please work"></a> </li>
+    <li><map name="testmap">
+	<area shape="circle" coords="55,53,54" href="https://example.com">
+	<area shape="circle" coords="173,54,56" href="https://example.com">
+	<area shape="circle" coords="291,50,56" href="https://example.com">
+	<area shape="rect" coords="38,117,171,186" href="https://example.com">
+	<area shape="rect" coords="215,113,398,211" href="https://example.com">
+	</map>
+	<img usemap="#testmap" src="map.jpg"></li>
+	<li> <a href="page1">page in the current folder</a> </li>
+	<li> <a href="about/page2">page in the about folder</a> </li>
+	<li> <a href="../page3">page in the previous folder</a> </li>
+	<li> <a href="../../page4">page in the previous previous folder</a> </li>
+	<li> <a href="/">link to main page</a> </li>
+	<li> <a href="/page5">link to inside page</a></li>
     </ol>
-    
+    <h3>HTML role-play form</h3>
+	<form action="/"
+      method="POST">
+
+      <label>
+        Name your flower-oc:<br />
+        <input name="field-name-1"
+          placeholder="Write your name there" />
+      </label><br />
+
+      <label>
+        E-mail:<br />
+        <input name="field-email"
+          type="email"
+          placeholder="Write your e-mail there" />
+      </label><br />
+
+      <label>
+        B-day date:<br />
+        <input name="field-date"
+          value="2002-12-29"
+          type="date" />
+      </label><br />
+	  
+	  Sex: <br>
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="Значение1" />
+        Flower 1</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Значение2" />
+        Flower 2</label><br />
+
+	  Count of limbs: <br>
+      <label><input type="radio" checked="checked"
+        name="radio-group-2" value="Значение1" />
+        1</label>
+      <label><input type="radio"
+        name="radio-group-2" value="Значение2" />
+        2</label>
+	  <label><input type="radio"
+        name="radio-group-2" value="Значение2" />
+        4</label>
+	  <label><input type="radio"
+        name="radio-group-2" value="Значение2" />
+        10</label>
+	  <label><input type="radio"
+        name="radio-group-2" value="Значение2" />
+        I don't have any</label> <br />
+
+  <label>
+        Superpower:
+        <br />
+        <select name="field-name-4[]"
+          multiple="multiple">
+          <option value="Значение1">Immortality</option>
+          <option value="Значение2" selected="selected">Walk through walls</option>
+          <option value="Значение3" selected="selected">Levitation</option>
+        </select>
+      </label><br />
+
+      <label>
+        Biography:<br />
+        <textarea name="field-name-2">Write all about your life, now</textarea>
+      </label><br />
+
+      Acquainted with the license agreement:<br />
+      <label><input type="checkbox"
+        name="check-1" />
+        Yes</label><br />
+
+      <input type="submit" value="Send" />
+    </form>
 	<div id="bottom"></div>
 </body>
