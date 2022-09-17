@@ -1,41 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<style>
-	@font-face {
-		font-family: fita_vjaz; 
-		src: url(fitavjaz.ttf); 
-  	}
-	#name {
-		font-family: fita_vjaz;
-		font-size: 72px;
-		color: #f5cd78;
-	#logo {
-		width: 200px;
-		height: 200px;
-		float: left;
-		margin-right: 20px;
-	}
-	#header, #navigation, #who {
-		clear: both;
-		align-items: center;
-		justify-content: center;
-	}
-	#mainhero {
-		height:500px;
-	}
-	.button {
-		max-width:300px; 
-		background-color:#f5cd78; 
-		margin: 0 auto; 
-		margin-top:30px; 
-		padding:10px;
-	}
-	.fortable {
-		max-width:300px; 
-		background-color:#f5cd78; 
-	}
-	</style>
+	<link rel="stylesheet" href="style.css">
 	<title> Homework </title>
 	<link rel="shortcut icon" href="logo.png" type="image/x-icon">
 </head>
@@ -88,7 +54,7 @@
 	
 	<h3 id="table">Table</h3>
 	<table class="fortable">
-		<tbody> <tr>
+		<tbody> <tr class="even">
 			<th>Senior</th>
 			<th>Inferior</th>
 			<th>Third</th>
@@ -97,9 +63,22 @@
 			<td colspan="2"> 11 with 12</td>
 			<td>13</td>
 		</tr>
-		<tr>
+		<tr class="even">
 			<td>21</td>
 			<td colspan="2"> 22 with 23</td>
+		</tr>
+		<tr>
+			<td>31</td>
+			<td>32</td>
+			<td>33</td>
+		</tr>
+		<tr class="even">
+			<td colspan="3"> 41 with 42 with 43</td>
+		</tr>
+		<tr>
+			<td>51</td>
+			<td>52</td>
+			<td>53</td>
 		</tr>
 		</tbody>
 	</table>
@@ -167,7 +146,7 @@
     </form>
 	
 	<footer>
-	<span id="who">(c) Shcherbina Tatyana, <time datetime="2022">2022</time> </span>
+	<span id="who">(c) Shcherbina Tatyana, <time datetime="2022"> 2022</time> </span>
 	</footer>
 </body>
 </html>
