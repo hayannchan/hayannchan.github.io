@@ -17,13 +17,11 @@
 		height:500px;
 	}
 	.button {
-		max-width:300px; 
+		width: 40vw;
+		padding: 1px 10vw;
 		background-color:#f5cd78; 
-		margin: 0 auto; 
-		margin-top:30px; 
-		padding:10px;
-		border-radius:5px;
-		text-decoration:none;
+		border-radius: 5px;
+		text-decoration: none;
 		color: white;
 	}
 	.button:hover {
@@ -44,6 +42,10 @@
 	#navigation {
 		display: flex;
 		flex-direction: column;
+		gap: 10vw;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
 	}
 	#tableform {
 		display: flex;
@@ -62,8 +64,11 @@
 	#header {
 		display: flex;
 		justify-content: center;
+	}
+	#bebigger {
+		font-size: 16pt;
 	}	
-	@media only screen and (min-width: 800px) {
+	@media only screen and (min-width: 769px) {
 		#navigation {
 			flex-direction:row;
 		}
@@ -78,5 +83,8 @@
 		}
 		#map {
 			display: block;
+		}
+		#bebigger {
+			font-size: 13pt;
 		}
 	}
