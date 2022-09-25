@@ -68,7 +68,7 @@
 	#bebigger {
 		font-size: 16pt;
 	}	
-	@media only screen and (min-width: 769px) {
+	@media screen and (min-width: 800px) {
 		#navigation {
 			flex-direction:row;
 		}
