@@ -13,7 +13,7 @@
 	#mainhero {
 		height:500px;
 	}
-	#calc-btn. #href-btn {
+	#calc-btn, #href-btn {
 		background-color:#f5cd78; 
 		border-radius: 5px;
 		text-decoration: none;
