@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 	@font-face {
 		font-family: fita_vjaz; 
 		src: url(fitavjaz.ttf); 
@@ -54,4 +55,62 @@
 		main {
 			font-size: 13pt;
 		}
+=======
+	@font-face {
+		font-family: fita_vjaz; 
+		src: url(fitavjaz.ttf); 
+  	}
+	#name {
+		font-family: fita_vjaz;
+		font-size: 72px;
+		color: #f5cd78;
+	}
+	#logo {
+		width: 200px;
+	}
+	#mainhero {
+		height:500px;
+	}
+	.button {
+		background-color:#f5cd78; 
+		border-radius: 5px;
+		text-decoration: none;
+		color: white;
+		max-width:200px;
+	}
+	.button:hover {
+		transition-duration:1s;
+		background-color:#e3ac60;
+		text-decoration: none;
+		color:white;
+	}
+	.fortable {
+		max-width:300px; 
+		background-color:#f5cd78; 
+	}
+	.even {
+		background-color:#e3ac60;
+	}
+	#tableform {
+		display: flex;
+		flex-direction: column;
+		
+	}
+	#map {
+		display: none;
+	}
+	main {
+		font-size: 16pt;
+	}	
+	@media screen and (min-width: 769px) {
+		#map-mobile {
+			display: none;
+		}
+		#map {
+			display: block;
+		}
+		main {
+			font-size: 13pt;
+		}
+>>>>>>> 9e964d30443068aab39b953683c2cdf35703a771
 	}
