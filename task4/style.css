@@ -37,12 +37,6 @@
 		display: flex;
 		flex-direction: column;
 		
-	}	
-	#tabl {
-		order: 2;
-	}
-	#for {
-		order: 1;
 	}
 	#map {
 		display: none;
@@ -51,12 +45,6 @@
 		font-size: 16pt;
 	}	
 	@media screen and (min-width: 769px) {
-		#tabl {
-			order: 1;
-		}
-		#for {
-			order: 2;
-		}
 		#map-mobile {
 			display: none;
 		}
