@@ -98,10 +98,10 @@ window.addEventListener("DOMContentLoaded", function () {
         if (fieldAmount[0].value !== "") {
             if (target.checked) {
                 price = amount * priceList.Manul[1];
-                purchase.innerHTML = "Price 1: " + price;
+                purchase.innerHTML = "Price Cute Manul: " + price;
             } else {
                 price = amount * priceList.Manul[0];
-                purchase.innerHTML = "Price 0: " + price;
+                purchase.innerHTML = "Price just Manul: " + price;
             }
         }
     });
@@ -122,21 +122,21 @@ window.addEventListener("DOMContentLoaded", function () {
                 } else if (select[0].value === "1") {
                     if (radioBtns[0].checked) {
                         price = amount * priceList.Sword[2];
-                        purchase.innerHTML = "Price 2: " + price;
+                        purchase.innerHTML = "Price Price Sword of Fire Lord: " + price;
                     } else if (radioBtns[1].checked) {
                         price = amount * priceList.Sword[1];
-                        purchase.innerHTML = "Price 1: " + price;
+                        purchase.innerHTML = "Price Katana of Forgotten Samurai: " + price;
                     } else {
 						price = amount * priceList.Sword[0];
-                        purchase.innerHTML = "Price 0: " + price;
+                        purchase.innerHTML = "Price Rapier of The Last Ball: " + price;
 					}
                 } else {
                     if (manul[0].checked) {
                         price = amount * priceList.Manul[1];
-                        purchase.innerHTML = "Price 1: " + price;
+                        purchase.innerHTML = "Price Cute Manul: " + price;
                     } else {
                         price = amount * priceList.Manul[0];
-                        purchase.innerHTML = "Price 0: " + price;
+                        purchase.innerHTML = "Price just Manul: " + price;
                     }
                 }
             } else {
