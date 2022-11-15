@@ -1,0 +1,45 @@
+body {
+	color:#000;
+}
+
+main {
+	max-width:960px;
+	font-size: 5vw;
+}
+
+#popup {
+	display: none;
+	width: 100vw;
+	background-color: rgb(0, 0, 0,0.7);
+	height: 100vh;
+	top:0px;
+	left: 0px;
+	overflow:auto;
+	position:absolute;
+}
+
+#popup form {
+	width: 100vw;
+	border-width: 3px;
+	background-color: #E5E5E5;
+}
+
+#formSubmit, #buttonFormShow {
+	color: #000;
+}
+
+textarea{
+	overflow: auto;
+    resize: none;
+}
+
+@media screen and (min-width:576px) {
+	
+	#popup form{
+		max-width: 50vW;
+	}
+	
+	textarea{
+		resize: vertical;
+	}
+}
