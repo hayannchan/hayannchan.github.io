@@ -1,0 +1,21 @@
+label, input, select, textarea {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--text);
+    text-shadow: 0 0 7px #9d822b;
+    font-family: raleway_f, sans-serif;
+    line-height: 1.55;
+
+}
+
+input, select, textarea {
+    background: transparent;
+}
+
+select {
+    border: 0;
+}
+
+textarea {
+    resize: none;
+}
