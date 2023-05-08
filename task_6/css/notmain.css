@@ -1,0 +1,31 @@
+label, input, select, textarea, .error-message, .login-link {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--text);
+    text-shadow: 0 0 7px #9d822b;
+    font-family: raleway_f, sans-serif;
+    line-height: 1.55;
+
+}
+
+input, select, textarea {
+    background: transparent;
+}
+
+select {
+    border: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+.error {
+    border-color: red;
+    box-shadow: 0 0 7px 1px red;
+    border-radius: 7px;
+}
+.error-message {
+    color: red;
+    text-shadow: none;
+}
